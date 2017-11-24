@@ -1,10 +1,10 @@
 SELECT
-		SEN.nome AS SENADOR,
+	SEN.nome AS SENADOR,
         SEN.uf AS UF,
         SEN.partido AS PARTIDO,
         TV.sigla AS VOTO,
         TV.descricao AS VOTO_DESCRICAO,
-		SEQ.DATA AS DATA,
+	SEQ.DATA AS DATA,
         SEQ.materia AS MATERIA,
         SEQ.EMENTA AS EMENTA,
         SEQ.DESCRICAO AS DESCRICAO,
