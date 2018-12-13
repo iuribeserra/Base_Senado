@@ -1,0 +1,80 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     1.4.3_New-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    94
+Attributes:   28
+              AC
+              AL
+              AM
+              AP
+              BA
+              CE
+              DF
+              ES
+              GO
+              MA
+              MG
+              MS
+              MT
+              PA
+              PB
+              PE
+              PI
+              PR
+              RJ
+              RN
+              RO
+              RR
+              RS
+              SC
+              SE
+              SP
+              TO
+              RESULTADO
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+ES = Sim: Aprovado (47.0)
+ES = Não: Rejeitado (19.0)
+ES = P-NRV
+|   SP = Sim: Aprovado (4.0)
+|   SP = P-NRV: Rejeitado (12.0)
+|   SP = Não: Rejeitado (12.0)
+
+Number of Leaves  : 	5
+
+Size of the tree : 	7
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          94              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances               94     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     Aprovado
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     Rejeitado
+Weighted Avg.    1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 51  0 |  a = Aprovado
+  0 43 |  b = Rejeitado
+

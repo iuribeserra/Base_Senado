@@ -1,0 +1,185 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 100 -T 1 -C 1.1 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     1.2.1-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    100
+Attributes:   58
+              DEN 00001/2016
+              MPV 00663/2014
+              MPV 00664/2014
+              MPV 00665/2014
+              MPV 00672/2015
+              MPV 00677/2015
+              MPV 00678/2015
+              MPV 00688/2015
+              MPV 00692/2015
+              MPV 00693/2015
+              MPV 00696/2015
+              OFS 00088/2015
+              PDS 00347/2015
+              PEC 00003/2016
+              PEC 00007/2015
+              PEC 00030/2014
+              PEC 00031/2016
+              PEC 00032/2010
+              PEC 00033/2014
+              PEC 00040/2011
+              PEC 00043/2012
+              PEC 00074/2013
+              PEC 00078/2013
+              PEC 00084/2015
+              PEC 00098/2015
+              PEC 00099/2015
+              PEC 00113/2015
+              PEC 00128/2015
+              PEC 00133/2015
+              PEC 00143/2015
+              PEC 00152/2015
+              PEC 00159/2015
+              PLC 00002/2015
+              PLC 00007/2016
+              PLC 00015/2015
+              PLC 00023/2015
+              PLC 00026/2015
+              PLC 00057/2015
+              PLC 00075/2015
+              PLC 00101/2015
+              PLC 00125/2015
+              PLC 00167/2015
+              PLC 00186/2015
+              PLS 00078/2015
+              PLS 00130/2014
+              PLS 00131/2015
+              PLS 00141/2014
+              PLS 00201/2013
+              PLS 00274/2015
+              PLS 00316/2015
+              PLS 00375/2011
+              PLS 00389/2015
+              PLS 00400/2014
+              PLS 00477/2011
+              PLS 00501/2013
+              PLS 00525/2015
+              PRS 00029/2016
+              SCD 00005/2015
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.65 (65 instances)
+Minimum metric <lift>: 1.1
+Number of cycles performed: 7
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 20
+
+Size of set of large itemsets L(2): 56
+
+Size of set of large itemsets L(3): 21
+
+Best rules found:
+
+  1. PEC 00128/2015=Sim 73 ==> PEC 00084/2015=Sim PRS 00029/2016=Sim 65    conf:(0.89) < lift:(1.33)> lev:(0.16) [16] conv:(2.68)
+  2. PEC 00084/2015=Sim PRS 00029/2016=Sim 67 ==> PEC 00128/2015=Sim 65    conf:(0.97) < lift:(1.33)> lev:(0.16) [16] conv:(6.03)
+  3. PEC 00098/2015=Sim 72 ==> SCD 00005/2015=Sim 65    conf:(0.9) < lift:(1.33)> lev:(0.16) [16] conv:(2.88)
+  4. SCD 00005/2015=Sim 68 ==> PEC 00098/2015=Sim 65    conf:(0.96) < lift:(1.33)> lev:(0.16) [16] conv:(4.76)
+  5. PLS 00316/2015=Sim 71 ==> PEC 00078/2013=Sim PRS 00029/2016=Sim 65    conf:(0.92) < lift:(1.33)> lev:(0.16) [16] conv:(3.14)
+  6. PEC 00078/2013=Sim PRS 00029/2016=Sim 69 ==> PLS 00316/2015=Sim 65    conf:(0.94) < lift:(1.33)> lev:(0.16) [16] conv:(4)
+  7. PEC 00084/2015=Sim 72 ==> PEC 00128/2015=Sim PLC 00015/2015=Sim 66    conf:(0.92) < lift:(1.31)> lev:(0.16) [15] conv:(3.09)
+  8. PEC 00128/2015=Sim PLC 00015/2015=Sim 70 ==> PEC 00084/2015=Sim 66    conf:(0.94) < lift:(1.31)> lev:(0.16) [15] conv:(3.92)
+  9. PEC 00098/2015=Sim 72 ==> PLC 00015/2015=Sim PLC 00026/2015=Sim 66    conf:(0.92) < lift:(1.31)> lev:(0.16) [15] conv:(3.09)
+ 10. PLC 00015/2015=Sim PLC 00026/2015=Sim 70 ==> PEC 00098/2015=Sim 66    conf:(0.94) < lift:(1.31)> lev:(0.16) [15] conv:(3.92)
+ 11. PLS 00316/2015=Sim 71 ==> PLC 00015/2015=Sim PRS 00029/2016=Sim 66    conf:(0.93) < lift:(1.31)> lev:(0.16) [15] conv:(3.43)
+ 12. PLC 00015/2015=Sim PRS 00029/2016=Sim 71 ==> PLS 00316/2015=Sim 66    conf:(0.93) < lift:(1.31)> lev:(0.16) [15] conv:(3.43)
+ 13. PEC 00098/2015=Sim 72 ==> PLS 00130/2014=Sim 65    conf:(0.9) < lift:(1.31)> lev:(0.15) [15] conv:(2.79)
+ 14. PLS 00130/2014=Sim 69 ==> PEC 00098/2015=Sim 65    conf:(0.94) < lift:(1.31)> lev:(0.15) [15] conv:(3.86)
+ 15. PEC 00084/2015=Sim 72 ==> PEC 00128/2015=Sim PRS 00029/2016=Sim 65    conf:(0.9) < lift:(1.31)> lev:(0.15) [15] conv:(2.79)
+ 16. PEC 00128/2015=Sim PRS 00029/2016=Sim 69 ==> PEC 00084/2015=Sim 65    conf:(0.94) < lift:(1.31)> lev:(0.15) [15] conv:(3.86)
+ 17. PLS 00316/2015=Sim 71 ==> PRS 00029/2016=Sim 68    conf:(0.96) < lift:(1.29)> lev:(0.15) [15] conv:(4.62)
+ 18. PRS 00029/2016=Sim 74 ==> PLS 00316/2015=Sim 68    conf:(0.92) < lift:(1.29)> lev:(0.15) [15] conv:(3.07)
+ 19. PEC 00084/2015=Sim 72 ==> PEC 00128/2015=Sim 68    conf:(0.94) < lift:(1.29)> lev:(0.15) [15] conv:(3.89)
+ 20. PEC 00128/2015=Sim 73 ==> PEC 00084/2015=Sim 68    conf:(0.93) < lift:(1.29)> lev:(0.15) [15] conv:(3.41)
+ 21. PEC 00098/2015=Sim 72 ==> PEC 00078/2013=Sim PLC 00015/2015=Sim 68    conf:(0.94) < lift:(1.29)> lev:(0.15) [15] conv:(3.89)
+ 22. PEC 00078/2013=Sim PLC 00015/2015=Sim 73 ==> PEC 00098/2015=Sim 68    conf:(0.93) < lift:(1.29)> lev:(0.15) [15] conv:(3.41)
+ 23. PEC 00128/2015=Sim PLC 00015/2015=Sim 70 ==> PRS 00029/2016=Sim 67    conf:(0.96) < lift:(1.29)> lev:(0.15) [15] conv:(4.55)
+ 24. PRS 00029/2016=Sim 74 ==> PEC 00128/2015=Sim PLC 00015/2015=Sim 67    conf:(0.91) < lift:(1.29)> lev:(0.15) [15] conv:(2.77)
+ 25. PEC 00128/2015=Sim 73 ==> PLC 00015/2015=Sim PRS 00029/2016=Sim 67    conf:(0.92) < lift:(1.29)> lev:(0.15) [15] conv:(3.02)
+ 26. PLC 00015/2015=Sim PRS 00029/2016=Sim 71 ==> PEC 00128/2015=Sim 67    conf:(0.94) < lift:(1.29)> lev:(0.15) [15] conv:(3.83)
+ 27. PLC 00015/2015=Sim PLS 00316/2015=Sim 69 ==> PRS 00029/2016=Sim 66    conf:(0.96) < lift:(1.29)> lev:(0.15) [14] conv:(4.49)
+ 28. PRS 00029/2016=Sim 74 ==> PLC 00015/2015=Sim PLS 00316/2015=Sim 66    conf:(0.89) < lift:(1.29)> lev:(0.15) [14] conv:(2.55)
+ 29. PEC 00078/2013=Sim PEC 00128/2015=Sim 68 ==> PRS 00029/2016=Sim 65    conf:(0.96) < lift:(1.29)> lev:(0.15) [14] conv:(4.42)
+ 30. PRS 00029/2016=Sim 74 ==> PEC 00078/2013=Sim PEC 00128/2015=Sim 65    conf:(0.88) < lift:(1.29)> lev:(0.15) [14] conv:(2.37)
+ 31. PEC 00078/2013=Sim PLS 00316/2015=Sim 68 ==> PRS 00029/2016=Sim 65    conf:(0.96) < lift:(1.29)> lev:(0.15) [14] conv:(4.42)
+ 32. PRS 00029/2016=Sim 74 ==> PEC 00078/2013=Sim PLS 00316/2015=Sim 65    conf:(0.88) < lift:(1.29)> lev:(0.15) [14] conv:(2.37)
+ 33. PEC 00084/2015=Sim PEC 00128/2015=Sim 68 ==> PRS 00029/2016=Sim 65    conf:(0.96) < lift:(1.29)> lev:(0.15) [14] conv:(4.42)
+ 34. PRS 00029/2016=Sim 74 ==> PEC 00084/2015=Sim PEC 00128/2015=Sim 65    conf:(0.88) < lift:(1.29)> lev:(0.15) [14] conv:(2.37)
+ 35. PEC 00128/2015=Sim 73 ==> PEC 00084/2015=Sim PLC 00015/2015=Sim 66    conf:(0.9) < lift:(1.29)> lev:(0.15) [14] conv:(2.74)
+ 36. PEC 00084/2015=Sim PLC 00015/2015=Sim 70 ==> PEC 00128/2015=Sim 66    conf:(0.94) < lift:(1.29)> lev:(0.15) [14] conv:(3.78)
+ 37. PEC 00128/2015=Sim 73 ==> PEC 00078/2013=Sim PRS 00029/2016=Sim 65    conf:(0.89) < lift:(1.29)> lev:(0.15) [14] conv:(2.51)
+ 38. PEC 00078/2013=Sim PRS 00029/2016=Sim 69 ==> PEC 00128/2015=Sim 65    conf:(0.94) < lift:(1.29)> lev:(0.15) [14] conv:(3.73)
+ 39. PEC 00098/2015=Sim 72 ==> PEC 00084/2015=Sim PLC 00015/2015=Sim 65    conf:(0.9) < lift:(1.29)> lev:(0.15) [14] conv:(2.7)
+ 40. PEC 00084/2015=Sim PLC 00015/2015=Sim 70 ==> PEC 00098/2015=Sim 65    conf:(0.93) < lift:(1.29)> lev:(0.15) [14] conv:(3.27)
+ 41. PEC 00098/2015=Sim 72 ==> PEC 00128/2015=Sim PLC 00015/2015=Sim 65    conf:(0.9) < lift:(1.29)> lev:(0.15) [14] conv:(2.7)
+ 42. PEC 00128/2015=Sim PLC 00015/2015=Sim 70 ==> PEC 00098/2015=Sim 65    conf:(0.93) < lift:(1.29)> lev:(0.15) [14] conv:(3.27)
+ 43. PEC 00098/2015=Sim 72 ==> PLC 00015/2015=Sim 71    conf:(0.99) < lift:(1.28)> lev:(0.16) [15] conv:(8.28)
+ 44. PLC 00015/2015=Sim 77 ==> PEC 00098/2015=Sim 71    conf:(0.92) < lift:(1.28)> lev:(0.16) [15] conv:(3.08)
+ 45. PLC 00015/2015=Sim 77 ==> PLS 00130/2014=Sim 68    conf:(0.88) < lift:(1.28)> lev:(0.15) [14] conv:(2.39)
+ 46. PLS 00130/2014=Sim 69 ==> PLC 00015/2015=Sim 68    conf:(0.99) < lift:(1.28)> lev:(0.15) [14] conv:(7.93)
+ 47. PEC 00078/2013=Sim PEC 00098/2015=Sim 69 ==> PLC 00015/2015=Sim 68    conf:(0.99) < lift:(1.28)> lev:(0.15) [14] conv:(7.93)
+ 48. PLC 00015/2015=Sim 77 ==> PEC 00078/2013=Sim PEC 00098/2015=Sim 68    conf:(0.88) < lift:(1.28)> lev:(0.15) [14] conv:(2.39)
+ 49. PLC 00015/2015=Sim 77 ==> SCD 00005/2015=Sim 67    conf:(0.87) < lift:(1.28)> lev:(0.15) [14] conv:(2.24)
+ 50. SCD 00005/2015=Sim 68 ==> PLC 00015/2015=Sim 67    conf:(0.99) < lift:(1.28)> lev:(0.15) [14] conv:(7.82)
+ 51. PLC 00015/2015=Sim 77 ==> PEC 00098/2015=Sim PLC 00026/2015=Sim 66    conf:(0.86) < lift:(1.28)> lev:(0.14) [14] conv:(2.12)
+ 52. PEC 00098/2015=Sim PLC 00026/2015=Sim 67 ==> PLC 00015/2015=Sim 66    conf:(0.99) < lift:(1.28)> lev:(0.14) [14] conv:(7.71)
+ 53. PEC 00074/2013=Sim PEC 00098/2015=Sim 66 ==> PLC 00015/2015=Sim 65    conf:(0.98) < lift:(1.28)> lev:(0.14) [14] conv:(7.59)
+ 54. PLC 00015/2015=Sim 77 ==> PEC 00074/2013=Sim PEC 00098/2015=Sim 65    conf:(0.84) < lift:(1.28)> lev:(0.14) [14] conv:(2.01)
+ 55. PEC 00084/2015=Sim PEC 00098/2015=Sim 66 ==> PLC 00015/2015=Sim 65    conf:(0.98) < lift:(1.28)> lev:(0.14) [14] conv:(7.59)
+ 56. PLC 00015/2015=Sim 77 ==> PEC 00084/2015=Sim PEC 00098/2015=Sim 65    conf:(0.84) < lift:(1.28)> lev:(0.14) [14] conv:(2.01)
+ 57. PEC 00098/2015=Sim PEC 00128/2015=Sim 66 ==> PLC 00015/2015=Sim 65    conf:(0.98) < lift:(1.28)> lev:(0.14) [14] conv:(7.59)
+ 58. PLC 00015/2015=Sim 77 ==> PEC 00098/2015=Sim PEC 00128/2015=Sim 65    conf:(0.84) < lift:(1.28)> lev:(0.14) [14] conv:(2.01)
+ 59. PLC 00015/2015=Sim 77 ==> PEC 00098/2015=Sim PRS 00029/2016=Sim 65    conf:(0.84) < lift:(1.28)> lev:(0.14) [14] conv:(2.01)
+ 60. PEC 00098/2015=Sim PRS 00029/2016=Sim 66 ==> PLC 00015/2015=Sim 65    conf:(0.98) < lift:(1.28)> lev:(0.14) [14] conv:(7.59)
+ 61. PEC 00078/2013=Sim 75 ==> PEC 00098/2015=Sim 69    conf:(0.92) < lift:(1.28)> lev:(0.15) [14] conv:(3)
+ 62. PEC 00098/2015=Sim 72 ==> PEC 00078/2013=Sim 69    conf:(0.96) < lift:(1.28)> lev:(0.15) [14] conv:(4.5)
+ 63. PEC 00128/2015=Sim 73 ==> PRS 00029/2016=Sim 69    conf:(0.95) < lift:(1.28)> lev:(0.15) [14] conv:(3.8)
+ 64. PRS 00029/2016=Sim 74 ==> PEC 00128/2015=Sim 69    conf:(0.93) < lift:(1.28)> lev:(0.15) [14] conv:(3.33)
+ 65. PEC 00078/2013=Sim 75 ==> PLS 00316/2015=Sim 68    conf:(0.91) < lift:(1.28)> lev:(0.15) [14] conv:(2.72)
+ 66. PLS 00316/2015=Sim 71 ==> PEC 00078/2013=Sim 68    conf:(0.96) < lift:(1.28)> lev:(0.15) [14] conv:(4.44)
+ 67. PEC 00078/2013=Sim 75 ==> PEC 00098/2015=Sim PLC 00015/2015=Sim 68    conf:(0.91) < lift:(1.28)> lev:(0.15) [14] conv:(2.72)
+ 68. PEC 00098/2015=Sim PLC 00015/2015=Sim 71 ==> PEC 00078/2013=Sim 68    conf:(0.96) < lift:(1.28)> lev:(0.15) [14] conv:(4.44)
+ 69. PEC 00078/2013=Sim 75 ==> PLC 00015/2015=Sim PLC 00026/2015=Sim 67    conf:(0.89) < lift:(1.28)> lev:(0.15) [14] conv:(2.5)
+ 70. PLC 00015/2015=Sim PLC 00026/2015=Sim 70 ==> PEC 00078/2013=Sim 67    conf:(0.96) < lift:(1.28)> lev:(0.15) [14] conv:(4.38)
+ 71. PEC 00078/2013=Sim 75 ==> PLC 00015/2015=Sim PLS 00316/2015=Sim 66    conf:(0.88) < lift:(1.28)> lev:(0.14) [14] conv:(2.33)
+ 72. PLC 00015/2015=Sim PLS 00316/2015=Sim 69 ==> PEC 00078/2013=Sim 66    conf:(0.96) < lift:(1.28)> lev:(0.14) [14] conv:(4.31)
+ 73. OFS 00088/2015=Sim 72 ==> PEC 00128/2015=Sim 67    conf:(0.93) < lift:(1.27)> lev:(0.14) [14] conv:(3.24)
+ 74. PEC 00128/2015=Sim 73 ==> OFS 00088/2015=Sim 67    conf:(0.92) < lift:(1.27)> lev:(0.14) [14] conv:(2.92)
+ 75. PEC 00098/2015=Sim 72 ==> PLC 00026/2015=Sim 67    conf:(0.93) < lift:(1.27)> lev:(0.14) [14] conv:(3.24)
+ 76. PLC 00026/2015=Sim 73 ==> PEC 00098/2015=Sim 67    conf:(0.92) < lift:(1.27)> lev:(0.14) [14] conv:(2.92)
+ 77. PEC 00078/2013=Sim 75 ==> PLS 00375/2011=Sim 65    conf:(0.87) < lift:(1.27)> lev:(0.14) [14] conv:(2.18)
+ 78. PLS 00375/2011=Sim 68 ==> PEC 00078/2013=Sim 65    conf:(0.96) < lift:(1.27)> lev:(0.14) [14] conv:(4.25)
+ 79. PEC 00078/2013=Sim 75 ==> SCD 00005/2015=Sim 65    conf:(0.87) < lift:(1.27)> lev:(0.14) [14] conv:(2.18)
+ 80. SCD 00005/2015=Sim 68 ==> PEC 00078/2013=Sim 65    conf:(0.96) < lift:(1.27)> lev:(0.14) [14] conv:(4.25)
+ 81. PEC 00078/2013=Sim 75 ==> PLS 00316/2015=Sim PRS 00029/2016=Sim 65    conf:(0.87) < lift:(1.27)> lev:(0.14) [14] conv:(2.18)
+ 82. PLS 00316/2015=Sim PRS 00029/2016=Sim 68 ==> PEC 00078/2013=Sim 65    conf:(0.96) < lift:(1.27)> lev:(0.14) [14] conv:(4.25)
+ 83. PEC 00128/2015=Sim 73 ==> PLS 00316/2015=Sim 66    conf:(0.9) < lift:(1.27)> lev:(0.14) [14] conv:(2.65)
+ 84. PLS 00316/2015=Sim 71 ==> PEC 00128/2015=Sim 66    conf:(0.93) < lift:(1.27)> lev:(0.14) [14] conv:(3.2)
+ 85. PEC 00078/2013=Sim PLC 00015/2015=Sim 73 ==> PLS 00316/2015=Sim 66    conf:(0.9) < lift:(1.27)> lev:(0.14) [14] conv:(2.65)
+ 86. PLS 00316/2015=Sim 71 ==> PEC 00078/2013=Sim PLC 00015/2015=Sim 66    conf:(0.93) < lift:(1.27)> lev:(0.14) [14] conv:(3.2)
+ 87. PEC 00098/2015=Sim PLC 00015/2015=Sim 71 ==> PLC 00026/2015=Sim 66    conf:(0.93) < lift:(1.27)> lev:(0.14) [14] conv:(3.2)
+ 88. PLC 00026/2015=Sim 73 ==> PEC 00098/2015=Sim PLC 00015/2015=Sim 66    conf:(0.9) < lift:(1.27)> lev:(0.14) [14] conv:(2.65)
+ 89. PEC 00084/2015=Sim 72 ==> PEC 00098/2015=Sim 66    conf:(0.92) < lift:(1.27)> lev:(0.14) [14] conv:(2.88)
+ 90. PEC 00098/2015=Sim 72 ==> PEC 00084/2015=Sim 66    conf:(0.92) < lift:(1.27)> lev:(0.14) [14] conv:(2.88)
+ 91. OFS 00088/2015=Sim 72 ==> PLS 00316/2015=Sim 65    conf:(0.9) < lift:(1.27)> lev:(0.14) [13] conv:(2.61)
+ 92. PLS 00316/2015=Sim 71 ==> OFS 00088/2015=Sim 65    conf:(0.92) < lift:(1.27)> lev:(0.14) [13] conv:(2.84)
+ 93. PEC 00084/2015=Sim 72 ==> PLS 00316/2015=Sim 65    conf:(0.9) < lift:(1.27)> lev:(0.14) [13] conv:(2.61)
+ 94. PLS 00316/2015=Sim 71 ==> PEC 00084/2015=Sim 65    conf:(0.92) < lift:(1.27)> lev:(0.14) [13] conv:(2.84)
+ 95. PEC 00098/2015=Sim 72 ==> PEC 00074/2013=Sim PLC 00015/2015=Sim 65    conf:(0.9) < lift:(1.27)> lev:(0.14) [13] conv:(2.61)
+ 96. PEC 00074/2013=Sim PLC 00015/2015=Sim 71 ==> PEC 00098/2015=Sim 65    conf:(0.92) < lift:(1.27)> lev:(0.14) [13] conv:(2.84)
+ 97. PEC 00084/2015=Sim 72 ==> PEC 00098/2015=Sim PLC 00015/2015=Sim 65    conf:(0.9) < lift:(1.27)> lev:(0.14) [13] conv:(2.61)
+ 98. PEC 00098/2015=Sim PLC 00015/2015=Sim 71 ==> PEC 00084/2015=Sim 65    conf:(0.92) < lift:(1.27)> lev:(0.14) [13] conv:(2.84)
+ 99. PEC 00084/2015=Sim 72 ==> PLC 00015/2015=Sim PRS 00029/2016=Sim 65    conf:(0.9) < lift:(1.27)> lev:(0.14) [13] conv:(2.61)
+100. PLC 00015/2015=Sim PRS 00029/2016=Sim 71 ==> PEC 00084/2015=Sim 65    conf:(0.92) < lift:(1.27)> lev:(0.14) [13] conv:(2.84)
+

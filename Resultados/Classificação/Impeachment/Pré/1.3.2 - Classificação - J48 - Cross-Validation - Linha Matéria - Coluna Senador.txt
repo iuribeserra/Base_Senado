@@ -1,0 +1,149 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     1.3.2-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.Remove-R3,22,30,39,67,72,88,93,97,102
+Instances:    94
+Attributes:   94
+              Acir Gurgacz - PDT/RO
+              Aécio Neves - PSDB/MG
+              Aloysio Nunes Ferreira - PSDB/SP
+              Alvaro Dias - PSDB/PR
+              Ana Amélia - PP/RS
+              Ângela Portela - PT/RR
+              Angela Portela - PT/RR
+              Antonio Anastasia - PSDB/MG
+              Antonio Carlos Valadares - PSB/SE
+              Armando Monteiro - PTB/PE
+              Ataídes Oliveira - PSDB/TO
+              Benedito de Lira - PP/AL
+              Blairo Maggi - PR/MT
+              Cássio Cunha Lima - PSDB/PB
+              Cidinho Santos - PR/MT
+              Ciro Nogueira - PP/PI
+              Cristovam Buarque - PDT/DF
+              Dalirio Beber - PSDB/SC
+              Dário Berger - PMDB/SC
+              Davi Alcolumbre - DEM/AP
+              Delcídio do Amaral - PT/MS
+              Donizeti Nogueira - PT/TO
+              Douglas Cintra - PTB/PE
+              Edison Lobão - PMDB/MA
+              Eduardo Amorim - PSC/SE
+              Eduardo Braga - PMDB/AM
+              Eduardo Lopes - PRB/RJ
+              Elmano Férrer - PTB/PI
+              Eunício Oliveira - PMDB/CE
+              Fátima Bezerra - PT/RN
+              Fernando Bezerra Coelho - PSB/PE
+              Fernando Collor - PTB/AL
+              Fernando Ribeiro - PMDB/PA
+              Flexa Ribeiro - PSDB/PA
+              Garibaldi Alves Filho - PMDB/RN
+              Gladson Cameli - PP/AC
+              Gleisi Hoffmann - PT/PR
+              Hélio José - PSD/DF
+              Humberto Costa - PT/PE
+              Ivo Cassol - PP/RO
+              Jader Barbalho - PMDB/PA
+              João Alberto Souza - PMDB/MA
+              João Capiberibe - PSB/AP
+              Jorge Viana - PT/AC
+              José Agripino - DEM/RN
+              José Aníbal - PSDB/SP
+              José Maranhão - PMDB/PB
+              José Medeiros - PPS/MT
+              José Pimentel - PT/CE
+              José Serra - PSDB/SP
+              Kátia Abreu - PMDB/TO
+              Lasier Martins - PDT/RS
+              Lídice da Mata - PSB/BA
+              Lindbergh Farias - PT/RJ
+              Lúcia Vânia - PSDB/GO
+              Luiz Henrique - PMDB/SC
+              Magno Malta - PR/ES
+              Marcelo Crivella - PRB/RJ
+              Maria do Carmo Alves - DEM/SE
+              Marta Suplicy - PT/SP
+              Omar Aziz - PSD/AM
+              Otto Alencar - PSD/BA
+              Paulo Bauer - PSDB/SC
+              Paulo Paim - PT/RS
+              Paulo Rocha - PT/PA
+              Pedro Chaves - PSC/MS
+              Raimundo Lira - PMDB/PB
+              Randolfe Rodrigues - PSOL/AP
+              Regina Sousa - PT/PI
+              Reguffe - PDT/DF
+              Renan Calheiros - PMDB/AL
+              Ricardo Ferraço - PMDB/ES
+              Ricardo Franco - DEM/SE
+              Roberto Muniz - PP/BA
+              Roberto Requião - PMDB/PR
+              Roberto Rocha - PSB/MA
+              Romário - PSB/RJ
+              Romero Jucá - PMDB/RR
+              Ronaldo Caiado - DEM/GO
+              Rose de Freitas - PMDB/ES
+              Sandra Braga - PMDB/AM
+              Sérgio Petecão - PSD/AC
+              Simone Tebet - PMDB/MS
+              Tasso Jereissati - PSDB/CE
+              Telmário Mota - PDT/RR
+              Valdir Raupp - PMDB/RO
+              Vanessa Grazziotin - PCdoB/AM
+              Vicentinho Alves - PR/TO
+              Waldemir Moka - PMDB/MS
+              Walter Pinheiro - PT/BA
+              Wellington Fagundes - PR/MT
+              Wilder Morais - DEM/GO
+              Zeze Perrella - PDT/MG
+              RESULTADO
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Raimundo Lira - PMDB/PB = Sim
+|   Ronaldo Caiado - DEM/GO = Sim: Aprovado (41.25/5.0)
+|   Ronaldo Caiado - DEM/GO = Não: Aprovado (7.4)
+|   Ronaldo Caiado - DEM/GO = P-NRV: Rejeitado (6.35/1.35)
+Raimundo Lira - PMDB/PB = Não: Rejeitado (27.0/2.0)
+Raimundo Lira - PMDB/PB = P-NRV
+|   Edison Lobão - PMDB/MA = Sim: Rejeitado (10.0)
+|   Edison Lobão - PMDB/MA = Não: Rejeitado (0.0)
+|   Edison Lobão - PMDB/MA = P-NRV: Aprovado (2.0)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	10
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          79               84.0426 %
+Incorrectly Classified Instances        15               15.9574 %
+Kappa statistic                          0.6817
+Mean absolute error                      0.2052
+Root mean squared error                  0.3937
+Relative absolute error                 41.0807 %
+Root relative squared error             78.7585 %
+Total Number of Instances               94     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,796    0,111    0,886      0,796    0,839      0,686    0,819     0,869     Aprovado
+                 0,889    0,204    0,800      0,889    0,842      0,686    0,819     0,720     Rejeitado
+Weighted Avg.    0,840    0,156    0,845      0,840    0,840      0,686    0,819     0,798     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 39 10 |  a = Aprovado
+  5 40 |  b = Rejeitado
+

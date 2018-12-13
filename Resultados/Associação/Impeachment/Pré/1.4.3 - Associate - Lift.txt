@@ -1,0 +1,167 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 100 -T 1 -C 1.1 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     1.4.3_New-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    58
+Attributes:   28
+              AC
+              AL
+              AM
+              AP
+              BA
+              CE
+              DF
+              ES
+              GO
+              MA
+              MG
+              MS
+              MT
+              PA
+              PB
+              PE
+              PI
+              PR
+              RJ
+              RN
+              RO
+              RR
+              RS
+              SC
+              SE
+              SP
+              TO
+              RESULTADO
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.85 (49 instances)
+Minimum metric <lift>: 1.1
+Number of cycles performed: 3
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 23
+
+Size of set of large itemsets L(2): 187
+
+Size of set of large itemsets L(3): 662
+
+Size of set of large itemsets L(4): 1240
+
+Size of set of large itemsets L(5): 1359
+
+Size of set of large itemsets L(6): 906
+
+Size of set of large itemsets L(7): 361
+
+Size of set of large itemsets L(8): 78
+
+Size of set of large itemsets L(9): 7
+
+Best rules found:
+
+  1. AM=Sim BA=Sim CE=Sim 50 ==> RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+  2. RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+  3. AM=Sim BA=Sim CE=Sim 50 ==> PA=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+  4. AM=Sim BA=Sim CE=Sim PA=Sim 50 ==> RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+  5. RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PA=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+  6. PA=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+  7. AM=Sim BA=Sim CE=Sim 50 ==> PI=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+  8. AM=Sim BA=Sim CE=Sim PI=Sim 50 ==> RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+  9. RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PI=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 10. PI=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 11. AM=Sim BA=Sim CE=Sim 50 ==> RN=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 12. AM=Sim BA=Sim CE=Sim RN=Sim 50 ==> RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 13. RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim RN=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 14. RN=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 15. AM=Sim BA=Sim CE=Sim 50 ==> TO=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 16. AM=Sim BA=Sim CE=Sim TO=Sim 50 ==> RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 17. RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim TO=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 18. TO=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 19. AM=Sim BA=Sim CE=Sim 50 ==> PA=Sim PI=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 20. AM=Sim BA=Sim CE=Sim PA=Sim 50 ==> PI=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 21. AM=Sim BA=Sim CE=Sim PI=Sim 50 ==> PA=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 22. AM=Sim BA=Sim CE=Sim PA=Sim PI=Sim 50 ==> RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 23. RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PA=Sim PI=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 24. PA=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PI=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 25. PI=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PA=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 26. PA=Sim PI=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 27. AM=Sim BA=Sim CE=Sim 50 ==> PA=Sim RN=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 28. AM=Sim BA=Sim CE=Sim PA=Sim 50 ==> RN=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 29. AM=Sim BA=Sim CE=Sim RN=Sim 50 ==> PA=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 30. AM=Sim BA=Sim CE=Sim PA=Sim RN=Sim 50 ==> RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 31. RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PA=Sim RN=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 32. PA=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim RN=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 33. RN=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PA=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 34. PA=Sim RN=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 35. AM=Sim BA=Sim CE=Sim 50 ==> PA=Sim TO=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 36. AM=Sim BA=Sim CE=Sim PA=Sim 50 ==> TO=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 37. AM=Sim BA=Sim CE=Sim TO=Sim 50 ==> PA=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 38. AM=Sim BA=Sim CE=Sim PA=Sim TO=Sim 50 ==> RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 39. RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PA=Sim TO=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 40. PA=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim TO=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 41. TO=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PA=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 42. PA=Sim TO=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 43. AM=Sim BA=Sim CE=Sim 50 ==> PI=Sim RN=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 44. AM=Sim BA=Sim CE=Sim PI=Sim 50 ==> RN=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 45. AM=Sim BA=Sim CE=Sim RN=Sim 50 ==> PI=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 46. AM=Sim BA=Sim CE=Sim PI=Sim RN=Sim 50 ==> RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 47. RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PI=Sim RN=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 48. PI=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim RN=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 49. RN=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PI=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 50. PI=Sim RN=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 51. AM=Sim BA=Sim CE=Sim 50 ==> PI=Sim TO=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 52. AM=Sim BA=Sim CE=Sim PI=Sim 50 ==> TO=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 53. AM=Sim BA=Sim CE=Sim TO=Sim 50 ==> PI=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 54. AM=Sim BA=Sim CE=Sim PI=Sim TO=Sim 50 ==> RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 55. RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PI=Sim TO=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 56. PI=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim TO=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 57. TO=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PI=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 58. PI=Sim TO=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 59. AM=Sim BA=Sim CE=Sim 50 ==> RN=Sim TO=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 60. AM=Sim BA=Sim CE=Sim RN=Sim 50 ==> TO=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 61. AM=Sim BA=Sim CE=Sim TO=Sim 50 ==> RN=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 62. AM=Sim BA=Sim CE=Sim RN=Sim TO=Sim 50 ==> RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 63. RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim RN=Sim TO=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 64. RN=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim TO=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 65. TO=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim RN=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 66. RN=Sim TO=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 67. AM=Sim BA=Sim CE=Sim 50 ==> PA=Sim PI=Sim RN=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 68. AM=Sim BA=Sim CE=Sim PA=Sim 50 ==> PI=Sim RN=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 69. AM=Sim BA=Sim CE=Sim PI=Sim 50 ==> PA=Sim RN=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 70. AM=Sim BA=Sim CE=Sim PA=Sim PI=Sim 50 ==> RN=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 71. AM=Sim BA=Sim CE=Sim RN=Sim 50 ==> PA=Sim PI=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 72. AM=Sim BA=Sim CE=Sim PA=Sim RN=Sim 50 ==> PI=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 73. AM=Sim BA=Sim CE=Sim PI=Sim RN=Sim 50 ==> PA=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 74. AM=Sim BA=Sim CE=Sim PA=Sim PI=Sim RN=Sim 50 ==> RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 75. RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PA=Sim PI=Sim RN=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 76. PA=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PI=Sim RN=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 77. PI=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PA=Sim RN=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 78. PA=Sim PI=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim RN=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 79. RN=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PA=Sim PI=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 80. PA=Sim RN=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PI=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 81. PI=Sim RN=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PA=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 82. PA=Sim PI=Sim RN=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 83. AM=Sim BA=Sim CE=Sim 50 ==> PA=Sim PI=Sim TO=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 84. AM=Sim BA=Sim CE=Sim PA=Sim 50 ==> PI=Sim TO=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 85. AM=Sim BA=Sim CE=Sim PI=Sim 50 ==> PA=Sim TO=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 86. AM=Sim BA=Sim CE=Sim PA=Sim PI=Sim 50 ==> TO=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 87. AM=Sim BA=Sim CE=Sim TO=Sim 50 ==> PA=Sim PI=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 88. AM=Sim BA=Sim CE=Sim PA=Sim TO=Sim 50 ==> PI=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 89. AM=Sim BA=Sim CE=Sim PI=Sim TO=Sim 50 ==> PA=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 90. AM=Sim BA=Sim CE=Sim PA=Sim PI=Sim TO=Sim 50 ==> RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+ 91. RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PA=Sim PI=Sim TO=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 92. PA=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PI=Sim TO=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 93. PI=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PA=Sim TO=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 94. PA=Sim PI=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim TO=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 95. TO=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PA=Sim PI=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 96. PA=Sim TO=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PI=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 97. PI=Sim TO=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim PA=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 98. PA=Sim PI=Sim TO=Sim RESULTADO=Aprovado 51 ==> AM=Sim BA=Sim CE=Sim 50    conf:(0.98) < lift:(1.14)> lev:(0.1) [6] conv:(3.52)
+ 99. AM=Sim BA=Sim CE=Sim 50 ==> PA=Sim RN=Sim TO=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+100. AM=Sim BA=Sim CE=Sim PA=Sim 50 ==> RN=Sim TO=Sim RESULTADO=Aprovado 50    conf:(1) < lift:(1.14)> lev:(0.1) [6] conv:(6.03)
+

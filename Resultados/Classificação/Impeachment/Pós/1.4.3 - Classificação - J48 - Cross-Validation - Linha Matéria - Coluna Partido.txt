@@ -1,0 +1,76 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     1.4.3_New-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    62
+Attributes:   28
+              AC
+              AL
+              AM
+              AP
+              BA
+              CE
+              DF
+              ES
+              GO
+              MA
+              MG
+              MS
+              MT
+              PA
+              PB
+              PE
+              PI
+              PR
+              RJ
+              RN
+              RO
+              RR
+              RS
+              SC
+              SE
+              SP
+              TO
+              RESULTADO
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+SC = Sim: Aprovado (32.0)
+SC = Não: Rejeitado (30.0/1.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          60               96.7742 %
+Incorrectly Classified Instances         2                3.2258 %
+Kappa statistic                          0.9355
+Mean absolute error                      0.046 
+Root mean squared error                  0.181 
+Relative absolute error                  9.2169 %
+Root relative squared error             36.2316 %
+Total Number of Instances               62     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,939    0,000    1,000      0,939    0,969      0,937    0,946     0,972     Aprovado
+                 1,000    0,061    0,935      1,000    0,967      0,937    0,946     0,888     Rejeitado
+Weighted Avg.    0,968    0,028    0,970      0,968    0,968      0,937    0,946     0,932     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 31  2 |  a = Aprovado
+  0 29 |  b = Rejeitado
+

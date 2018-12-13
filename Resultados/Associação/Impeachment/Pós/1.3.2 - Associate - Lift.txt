@@ -1,0 +1,222 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 100 -T 1 -C 1.1 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     1.3.2-weka.filters.unsupervised.attribute.Remove-R1,9,15,24-26,37,40,61,80,88,103
+Instances:    37
+Attributes:   93
+              Acir Gurgacz - PDT/RO
+              Aécio Neves - PSDB/MG
+              Airton Sandoval - PMDB/SP
+              Aloysio Nunes Ferreira - PSDB/SP
+              Alvaro Dias - PSDB/PR
+              Ana Amélia - PP/RS
+              Ângela Portela - PT/RR
+              Antonio Anastasia - PSDB/MG
+              Antonio Carlos Valadares - PSB/SE
+              Armando Monteiro - PTB/PE
+              Ataídes Oliveira - PSDB/TO
+              Benedito de Lira - PP/AL
+              Cássio Cunha Lima - PSDB/PB
+              Cidinho Santos - PR/MT
+              Ciro Nogueira - PP/PI
+              Cristovam Buarque - PDT/DF
+              Dalirio Beber - PSDB/SC
+              Dário Berger - PMDB/SC
+              Davi Alcolumbre - DEM/AP
+              Deca - PSDB/PB
+              Edison Lobão - PMDB/MA
+              Eduardo Amorim - PSC/SE
+              Eduardo Braga - PMDB/AM
+              Eduardo Lopes - PRB/RJ
+              Elber Batalha - PSB/SE
+              Elmano Férrer - PTB/PI
+              Eunício Oliveira - PMDB/CE
+              Fátima Bezerra - PT/RN
+              Fernando Bezerra Coelho - PSB/PE
+              Fernando Collor - PTB/AL
+              Flexa Ribeiro - PSDB/PA
+              Garibaldi Alves Filho - PMDB/RN
+              Gladson Cameli - PP/AC
+              Gleisi Hoffmann - PT/PR
+              Hélio José - PSD/DF
+              Humberto Costa - PT/PE
+              Ivo Cassol - PP/RO
+              Jader Barbalho - PMDB/PA
+              João Alberto Souza - PMDB/MA
+              João Capiberibe - PSB/AP
+              Jorge Viana - PT/AC
+              José Agripino - DEM/RN
+              José Aníbal - PSDB/SP
+              José Maranhão - PMDB/PB
+              José Medeiros - PPS/MT
+              José Pimentel - PT/CE
+              José Serra - PSDB/SP
+              Kátia Abreu - PMDB/TO
+              Lasier Martins - PDT/RS
+              Lídice da Mata - PSB/BA
+              Lindbergh Farias - PT/RJ
+              Lúcia Vânia - PSDB/GO
+              Magno Malta - PR/ES
+              Marcelo Crivella - PRB/RJ
+              Maria do Carmo Alves - DEM/SE
+              Marta Suplicy - PT/SP
+              Omar Aziz - PSD/AM
+              Otto Alencar - PSD/BA
+              Pastor Valadares - PDT/RO
+              Paulo Bauer - PSDB/SC
+              Paulo Paim - PT/RS
+              Paulo Rocha - PT/PA
+              Pedro Chaves - PSC/MS
+              Pinto Itamaraty - PSDB/MA
+              Raimundo Lira - PMDB/PB
+              Randolfe Rodrigues - PSOL/AP
+              Regina Sousa - PT/PI
+              Reguffe - PDT/DF
+              Renan Calheiros - PMDB/AL
+              Ricardo Ferraço - PMDB/ES
+              Roberto Muniz - PP/BA
+              Roberto Requião - PMDB/PR
+              Roberto Rocha - PSB/MA
+              Romário - PSB/RJ
+              Romero Jucá - PMDB/RR
+              Ronaldo Caiado - DEM/GO
+              Rose de Freitas - PMDB/ES
+              Sérgio de Castro - PDT/ES
+              Sérgio Petecão - PSD/AC
+              Simone Tebet - PMDB/MS
+              Tasso Jereissati - PSDB/CE
+              Telmário Mota - PDT/RR
+              Thieres Pinto - PTB/RR
+              Valdir Raupp - PMDB/RO
+              Vanessa Grazziotin - PCdoB/AM
+              Vicentinho Alves - PR/TO
+              Virginio de Carvalho - PSC/SE
+              Waldemir Moka - PMDB/MS
+              Walter Pinheiro - PT/BA
+              Wellington Fagundes - PR/MT
+              Wilder Morais - DEM/GO
+              Zeze Perrella - PDT/MG
+              RESULTADO
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.75 (28 instances)
+Minimum metric <lift>: 1.1
+Number of cycles performed: 5
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 10
+
+Size of set of large itemsets L(2): 16
+
+Size of set of large itemsets L(3): 9
+
+Size of set of large itemsets L(4): 1
+
+Best rules found:
+
+  1. Benedito de Lira - PP/AL=Sim 30 ==> Ivo Cassol - PP/RO=Sim 29    conf:(0.97) < lift:(1.23)> lev:(0.15) [5] conv:(3.24)
+  2. Ivo Cassol - PP/RO=Sim 29 ==> Benedito de Lira - PP/AL=Sim 29    conf:(1) < lift:(1.23)> lev:(0.15) [5] conv:(5.49)
+  3. Benedito de Lira - PP/AL=Sim 30 ==> Flexa Ribeiro - PSDB/PA=Sim Ivo Cassol - PP/RO=Sim 29    conf:(0.97) < lift:(1.23)> lev:(0.15) [5] conv:(3.24)
+  4. Benedito de Lira - PP/AL=Sim Flexa Ribeiro - PSDB/PA=Sim 30 ==> Ivo Cassol - PP/RO=Sim 29    conf:(0.97) < lift:(1.23)> lev:(0.15) [5] conv:(3.24)
+  5. Ivo Cassol - PP/RO=Sim 29 ==> Benedito de Lira - PP/AL=Sim Flexa Ribeiro - PSDB/PA=Sim 29    conf:(1) < lift:(1.23)> lev:(0.15) [5] conv:(5.49)
+  6. Flexa Ribeiro - PSDB/PA=Sim Ivo Cassol - PP/RO=Sim 29 ==> Benedito de Lira - PP/AL=Sim 29    conf:(1) < lift:(1.23)> lev:(0.15) [5] conv:(5.49)
+  7. Benedito de Lira - PP/AL=Sim 30 ==> Ivo Cassol - PP/RO=Sim RESULTADO=Aprovado 28    conf:(0.93) < lift:(1.23)> lev:(0.14) [5] conv:(2.43)
+  8. Ivo Cassol - PP/RO=Sim RESULTADO=Aprovado 28 ==> Benedito de Lira - PP/AL=Sim 28    conf:(1) < lift:(1.23)> lev:(0.14) [5] conv:(5.3)
+  9. Benedito de Lira - PP/AL=Sim 30 ==> Flexa Ribeiro - PSDB/PA=Sim Ivo Cassol - PP/RO=Sim RESULTADO=Aprovado 28    conf:(0.93) < lift:(1.23)> lev:(0.14) [5] conv:(2.43)
+ 10. Benedito de Lira - PP/AL=Sim Flexa Ribeiro - PSDB/PA=Sim 30 ==> Ivo Cassol - PP/RO=Sim RESULTADO=Aprovado 28    conf:(0.93) < lift:(1.23)> lev:(0.14) [5] conv:(2.43)
+ 11. Ivo Cassol - PP/RO=Sim RESULTADO=Aprovado 28 ==> Benedito de Lira - PP/AL=Sim Flexa Ribeiro - PSDB/PA=Sim 28    conf:(1) < lift:(1.23)> lev:(0.14) [5] conv:(5.3)
+ 12. Flexa Ribeiro - PSDB/PA=Sim Ivo Cassol - PP/RO=Sim RESULTADO=Aprovado 28 ==> Benedito de Lira - PP/AL=Sim 28    conf:(1) < lift:(1.23)> lev:(0.14) [5] conv:(5.3)
+ 13. Ivo Cassol - PP/RO=Sim 29 ==> Benedito de Lira - PP/AL=Sim RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.23)> lev:(0.14) [5] conv:(3.14)
+ 14. Benedito de Lira - PP/AL=Sim RESULTADO=Aprovado 29 ==> Ivo Cassol - PP/RO=Sim 28    conf:(0.97) < lift:(1.23)> lev:(0.14) [5] conv:(3.14)
+ 15. Ivo Cassol - PP/RO=Sim 29 ==> Benedito de Lira - PP/AL=Sim Flexa Ribeiro - PSDB/PA=Sim RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.23)> lev:(0.14) [5] conv:(3.14)
+ 16. Flexa Ribeiro - PSDB/PA=Sim Ivo Cassol - PP/RO=Sim 29 ==> Benedito de Lira - PP/AL=Sim RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.23)> lev:(0.14) [5] conv:(3.14)
+ 17. Benedito de Lira - PP/AL=Sim RESULTADO=Aprovado 29 ==> Flexa Ribeiro - PSDB/PA=Sim Ivo Cassol - PP/RO=Sim 28    conf:(0.97) < lift:(1.23)> lev:(0.14) [5] conv:(3.14)
+ 18. Benedito de Lira - PP/AL=Sim Flexa Ribeiro - PSDB/PA=Sim RESULTADO=Aprovado 29 ==> Ivo Cassol - PP/RO=Sim 28    conf:(0.97) < lift:(1.23)> lev:(0.14) [5] conv:(3.14)
+ 19. Benedito de Lira - PP/AL=Sim 30 ==> José Agripino - DEM/RN=Sim 28    conf:(0.93) < lift:(1.19)> lev:(0.12) [4] conv:(2.16)
+ 20. José Agripino - DEM/RN=Sim 29 ==> Benedito de Lira - PP/AL=Sim 28    conf:(0.97) < lift:(1.19)> lev:(0.12) [4] conv:(2.74)
+ 21. Benedito de Lira - PP/AL=Sim 30 ==> Paulo Bauer - PSDB/SC=Sim 28    conf:(0.93) < lift:(1.19)> lev:(0.12) [4] conv:(2.16)
+ 22. Paulo Bauer - PSDB/SC=Sim 29 ==> Benedito de Lira - PP/AL=Sim 28    conf:(0.97) < lift:(1.19)> lev:(0.12) [4] conv:(2.74)
+ 23. Benedito de Lira - PP/AL=Sim 30 ==> Flexa Ribeiro - PSDB/PA=Sim José Agripino - DEM/RN=Sim 28    conf:(0.93) < lift:(1.19)> lev:(0.12) [4] conv:(2.16)
+ 24. Benedito de Lira - PP/AL=Sim Flexa Ribeiro - PSDB/PA=Sim 30 ==> José Agripino - DEM/RN=Sim 28    conf:(0.93) < lift:(1.19)> lev:(0.12) [4] conv:(2.16)
+ 25. José Agripino - DEM/RN=Sim 29 ==> Benedito de Lira - PP/AL=Sim Flexa Ribeiro - PSDB/PA=Sim 28    conf:(0.97) < lift:(1.19)> lev:(0.12) [4] conv:(2.74)
+ 26. Flexa Ribeiro - PSDB/PA=Sim José Agripino - DEM/RN=Sim 29 ==> Benedito de Lira - PP/AL=Sim 28    conf:(0.97) < lift:(1.19)> lev:(0.12) [4] conv:(2.74)
+ 27. Benedito de Lira - PP/AL=Sim 30 ==> Flexa Ribeiro - PSDB/PA=Sim Paulo Bauer - PSDB/SC=Sim 28    conf:(0.93) < lift:(1.19)> lev:(0.12) [4] conv:(2.16)
+ 28. Benedito de Lira - PP/AL=Sim Flexa Ribeiro - PSDB/PA=Sim 30 ==> Paulo Bauer - PSDB/SC=Sim 28    conf:(0.93) < lift:(1.19)> lev:(0.12) [4] conv:(2.16)
+ 29. Paulo Bauer - PSDB/SC=Sim 29 ==> Benedito de Lira - PP/AL=Sim Flexa Ribeiro - PSDB/PA=Sim 28    conf:(0.97) < lift:(1.19)> lev:(0.12) [4] conv:(2.74)
+ 30. Flexa Ribeiro - PSDB/PA=Sim Paulo Bauer - PSDB/SC=Sim 29 ==> Benedito de Lira - PP/AL=Sim 28    conf:(0.97) < lift:(1.19)> lev:(0.12) [4] conv:(2.74)
+ 31. Benedito de Lira - PP/AL=Sim 30 ==> Flexa Ribeiro - PSDB/PA=Sim 30    conf:(1) < lift:(1.16)> lev:(0.11) [4] conv:(4.05)
+ 32. Flexa Ribeiro - PSDB/PA=Sim 32 ==> Benedito de Lira - PP/AL=Sim 30    conf:(0.94) < lift:(1.16)> lev:(0.11) [4] conv:(2.02)
+ 33. Flexa Ribeiro - PSDB/PA=Sim 32 ==> Ivo Cassol - PP/RO=Sim 29    conf:(0.91) < lift:(1.16)> lev:(0.11) [3] conv:(1.73)
+ 34. Ivo Cassol - PP/RO=Sim 29 ==> Flexa Ribeiro - PSDB/PA=Sim 29    conf:(1) < lift:(1.16)> lev:(0.11) [3] conv:(3.92)
+ 35. Flexa Ribeiro - PSDB/PA=Sim 32 ==> José Agripino - DEM/RN=Sim 29    conf:(0.91) < lift:(1.16)> lev:(0.11) [3] conv:(1.73)
+ 36. José Agripino - DEM/RN=Sim 29 ==> Flexa Ribeiro - PSDB/PA=Sim 29    conf:(1) < lift:(1.16)> lev:(0.11) [3] conv:(3.92)
+ 37. Flexa Ribeiro - PSDB/PA=Sim 32 ==> Paulo Bauer - PSDB/SC=Sim 29    conf:(0.91) < lift:(1.16)> lev:(0.11) [3] conv:(1.73)
+ 38. Paulo Bauer - PSDB/SC=Sim 29 ==> Flexa Ribeiro - PSDB/PA=Sim 29    conf:(1) < lift:(1.16)> lev:(0.11) [3] conv:(3.92)
+ 39. Flexa Ribeiro - PSDB/PA=Sim 32 ==> Valdir Raupp - PMDB/RO=Sim 29    conf:(0.91) < lift:(1.16)> lev:(0.11) [3] conv:(1.73)
+ 40. Valdir Raupp - PMDB/RO=Sim 29 ==> Flexa Ribeiro - PSDB/PA=Sim 29    conf:(1) < lift:(1.16)> lev:(0.11) [3] conv:(3.92)
+ 41. Flexa Ribeiro - PSDB/PA=Sim 32 ==> Benedito de Lira - PP/AL=Sim Ivo Cassol - PP/RO=Sim 29    conf:(0.91) < lift:(1.16)> lev:(0.11) [3] conv:(1.73)
+ 42. Benedito de Lira - PP/AL=Sim Ivo Cassol - PP/RO=Sim 29 ==> Flexa Ribeiro - PSDB/PA=Sim 29    conf:(1) < lift:(1.16)> lev:(0.11) [3] conv:(3.92)
+ 43. Flexa Ribeiro - PSDB/PA=Sim 32 ==> Benedito de Lira - PP/AL=Sim RESULTADO=Aprovado 29    conf:(0.91) < lift:(1.16)> lev:(0.11) [3] conv:(1.73)
+ 44. Benedito de Lira - PP/AL=Sim RESULTADO=Aprovado 29 ==> Flexa Ribeiro - PSDB/PA=Sim 29    conf:(1) < lift:(1.16)> lev:(0.11) [3] conv:(3.92)
+ 45. Cidinho Santos - PR/MT=Sim 28 ==> Flexa Ribeiro - PSDB/PA=Sim 28    conf:(1) < lift:(1.16)> lev:(0.1) [3] conv:(3.78)
+ 46. Flexa Ribeiro - PSDB/PA=Sim 32 ==> Cidinho Santos - PR/MT=Sim 28    conf:(0.88) < lift:(1.16)> lev:(0.1) [3] conv:(1.56)
+ 47. Flexa Ribeiro - PSDB/PA=Sim 32 ==> Garibaldi Alves Filho - PMDB/RN=Sim 28    conf:(0.88) < lift:(1.16)> lev:(0.1) [3] conv:(1.56)
+ 48. Garibaldi Alves Filho - PMDB/RN=Sim 28 ==> Flexa Ribeiro - PSDB/PA=Sim 28    conf:(1) < lift:(1.16)> lev:(0.1) [3] conv:(3.78)
+ 49. Flexa Ribeiro - PSDB/PA=Sim 32 ==> Benedito de Lira - PP/AL=Sim José Agripino - DEM/RN=Sim 28    conf:(0.88) < lift:(1.16)> lev:(0.1) [3] conv:(1.56)
+ 50. Benedito de Lira - PP/AL=Sim José Agripino - DEM/RN=Sim 28 ==> Flexa Ribeiro - PSDB/PA=Sim 28    conf:(1) < lift:(1.16)> lev:(0.1) [3] conv:(3.78)
+ 51. Flexa Ribeiro - PSDB/PA=Sim 32 ==> Benedito de Lira - PP/AL=Sim Paulo Bauer - PSDB/SC=Sim 28    conf:(0.88) < lift:(1.16)> lev:(0.1) [3] conv:(1.56)
+ 52. Benedito de Lira - PP/AL=Sim Paulo Bauer - PSDB/SC=Sim 28 ==> Flexa Ribeiro - PSDB/PA=Sim 28    conf:(1) < lift:(1.16)> lev:(0.1) [3] conv:(3.78)
+ 53. Flexa Ribeiro - PSDB/PA=Sim 32 ==> Ivo Cassol - PP/RO=Sim RESULTADO=Aprovado 28    conf:(0.88) < lift:(1.16)> lev:(0.1) [3] conv:(1.56)
+ 54. Ivo Cassol - PP/RO=Sim RESULTADO=Aprovado 28 ==> Flexa Ribeiro - PSDB/PA=Sim 28    conf:(1) < lift:(1.16)> lev:(0.1) [3] conv:(3.78)
+ 55. Flexa Ribeiro - PSDB/PA=Sim 32 ==> José Agripino - DEM/RN=Sim RESULTADO=Aprovado 28    conf:(0.88) < lift:(1.16)> lev:(0.1) [3] conv:(1.56)
+ 56. José Agripino - DEM/RN=Sim RESULTADO=Aprovado 28 ==> Flexa Ribeiro - PSDB/PA=Sim 28    conf:(1) < lift:(1.16)> lev:(0.1) [3] conv:(3.78)
+ 57. Flexa Ribeiro - PSDB/PA=Sim 32 ==> Paulo Bauer - PSDB/SC=Sim RESULTADO=Aprovado 28    conf:(0.88) < lift:(1.16)> lev:(0.1) [3] conv:(1.56)
+ 58. Paulo Bauer - PSDB/SC=Sim RESULTADO=Aprovado 28 ==> Flexa Ribeiro - PSDB/PA=Sim 28    conf:(1) < lift:(1.16)> lev:(0.1) [3] conv:(3.78)
+ 59. Flexa Ribeiro - PSDB/PA=Sim 32 ==> Valdir Raupp - PMDB/RO=Sim RESULTADO=Aprovado 28    conf:(0.88) < lift:(1.16)> lev:(0.1) [3] conv:(1.56)
+ 60. Valdir Raupp - PMDB/RO=Sim RESULTADO=Aprovado 28 ==> Flexa Ribeiro - PSDB/PA=Sim 28    conf:(1) < lift:(1.16)> lev:(0.1) [3] conv:(3.78)
+ 61. Flexa Ribeiro - PSDB/PA=Sim 32 ==> Benedito de Lira - PP/AL=Sim Ivo Cassol - PP/RO=Sim RESULTADO=Aprovado 28    conf:(0.88) < lift:(1.16)> lev:(0.1) [3] conv:(1.56)
+ 62. Benedito de Lira - PP/AL=Sim Ivo Cassol - PP/RO=Sim RESULTADO=Aprovado 28 ==> Flexa Ribeiro - PSDB/PA=Sim 28    conf:(1) < lift:(1.16)> lev:(0.1) [3] conv:(3.78)
+ 63. Benedito de Lira - PP/AL=Sim 30 ==> Flexa Ribeiro - PSDB/PA=Sim RESULTADO=Aprovado 29    conf:(0.97) < lift:(1.15)> lev:(0.1) [3] conv:(2.43)
+ 64. Flexa Ribeiro - PSDB/PA=Sim RESULTADO=Aprovado 31 ==> Benedito de Lira - PP/AL=Sim 29    conf:(0.94) < lift:(1.15)> lev:(0.1) [3] conv:(1.95)
+ 65. Ivo Cassol - PP/RO=Sim 29 ==> Flexa Ribeiro - PSDB/PA=Sim RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.15)> lev:(0.1) [3] conv:(2.35)
+ 66. Flexa Ribeiro - PSDB/PA=Sim RESULTADO=Aprovado 31 ==> Ivo Cassol - PP/RO=Sim 28    conf:(0.9) < lift:(1.15)> lev:(0.1) [3] conv:(1.68)
+ 67. José Agripino - DEM/RN=Sim 29 ==> Flexa Ribeiro - PSDB/PA=Sim RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.15)> lev:(0.1) [3] conv:(2.35)
+ 68. Flexa Ribeiro - PSDB/PA=Sim RESULTADO=Aprovado 31 ==> José Agripino - DEM/RN=Sim 28    conf:(0.9) < lift:(1.15)> lev:(0.1) [3] conv:(1.68)
+ 69. Paulo Bauer - PSDB/SC=Sim 29 ==> Flexa Ribeiro - PSDB/PA=Sim RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.15)> lev:(0.1) [3] conv:(2.35)
+ 70. Flexa Ribeiro - PSDB/PA=Sim RESULTADO=Aprovado 31 ==> Paulo Bauer - PSDB/SC=Sim 28    conf:(0.9) < lift:(1.15)> lev:(0.1) [3] conv:(1.68)
+ 71. Valdir Raupp - PMDB/RO=Sim 29 ==> Flexa Ribeiro - PSDB/PA=Sim RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.15)> lev:(0.1) [3] conv:(2.35)
+ 72. Flexa Ribeiro - PSDB/PA=Sim RESULTADO=Aprovado 31 ==> Valdir Raupp - PMDB/RO=Sim 28    conf:(0.9) < lift:(1.15)> lev:(0.1) [3] conv:(1.68)
+ 73. Benedito de Lira - PP/AL=Sim Ivo Cassol - PP/RO=Sim 29 ==> Flexa Ribeiro - PSDB/PA=Sim RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.15)> lev:(0.1) [3] conv:(2.35)
+ 74. Flexa Ribeiro - PSDB/PA=Sim RESULTADO=Aprovado 31 ==> Benedito de Lira - PP/AL=Sim Ivo Cassol - PP/RO=Sim 28    conf:(0.9) < lift:(1.15)> lev:(0.1) [3] conv:(1.68)
+ 75. Flexa Ribeiro - PSDB/PA=Sim 32 ==> RESULTADO=Aprovado 31    conf:(0.97) < lift:(1.12)> lev:(0.09) [3] conv:(2.16)
+ 76. RESULTADO=Aprovado 32 ==> Flexa Ribeiro - PSDB/PA=Sim 31    conf:(0.97) < lift:(1.12)> lev:(0.09) [3] conv:(2.16)
+ 77. Benedito de Lira - PP/AL=Sim 30 ==> RESULTADO=Aprovado 29    conf:(0.97) < lift:(1.12)> lev:(0.08) [3] conv:(2.03)
+ 78. RESULTADO=Aprovado 32 ==> Benedito de Lira - PP/AL=Sim 29    conf:(0.91) < lift:(1.12)> lev:(0.08) [3] conv:(1.51)
+ 79. Benedito de Lira - PP/AL=Sim Flexa Ribeiro - PSDB/PA=Sim 30 ==> RESULTADO=Aprovado 29    conf:(0.97) < lift:(1.12)> lev:(0.08) [3] conv:(2.03)
+ 80. RESULTADO=Aprovado 32 ==> Benedito de Lira - PP/AL=Sim Flexa Ribeiro - PSDB/PA=Sim 29    conf:(0.91) < lift:(1.12)> lev:(0.08) [3] conv:(1.51)
+ 81. Ivo Cassol - PP/RO=Sim 29 ==> RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.12)> lev:(0.08) [2] conv:(1.96)
+ 82. RESULTADO=Aprovado 32 ==> Ivo Cassol - PP/RO=Sim 28    conf:(0.88) < lift:(1.12)> lev:(0.08) [2] conv:(1.38)
+ 83. José Agripino - DEM/RN=Sim 29 ==> RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.12)> lev:(0.08) [2] conv:(1.96)
+ 84. RESULTADO=Aprovado 32 ==> José Agripino - DEM/RN=Sim 28    conf:(0.88) < lift:(1.12)> lev:(0.08) [2] conv:(1.38)
+ 85. Paulo Bauer - PSDB/SC=Sim 29 ==> RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.12)> lev:(0.08) [2] conv:(1.96)
+ 86. RESULTADO=Aprovado 32 ==> Paulo Bauer - PSDB/SC=Sim 28    conf:(0.88) < lift:(1.12)> lev:(0.08) [2] conv:(1.38)
+ 87. Valdir Raupp - PMDB/RO=Sim 29 ==> RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.12)> lev:(0.08) [2] conv:(1.96)
+ 88. RESULTADO=Aprovado 32 ==> Valdir Raupp - PMDB/RO=Sim 28    conf:(0.88) < lift:(1.12)> lev:(0.08) [2] conv:(1.38)
+ 89. Benedito de Lira - PP/AL=Sim Ivo Cassol - PP/RO=Sim 29 ==> RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.12)> lev:(0.08) [2] conv:(1.96)
+ 90. RESULTADO=Aprovado 32 ==> Benedito de Lira - PP/AL=Sim Ivo Cassol - PP/RO=Sim 28    conf:(0.88) < lift:(1.12)> lev:(0.08) [2] conv:(1.38)
+ 91. Flexa Ribeiro - PSDB/PA=Sim Ivo Cassol - PP/RO=Sim 29 ==> RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.12)> lev:(0.08) [2] conv:(1.96)
+ 92. RESULTADO=Aprovado 32 ==> Flexa Ribeiro - PSDB/PA=Sim Ivo Cassol - PP/RO=Sim 28    conf:(0.88) < lift:(1.12)> lev:(0.08) [2] conv:(1.38)
+ 93. Flexa Ribeiro - PSDB/PA=Sim José Agripino - DEM/RN=Sim 29 ==> RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.12)> lev:(0.08) [2] conv:(1.96)
+ 94. RESULTADO=Aprovado 32 ==> Flexa Ribeiro - PSDB/PA=Sim José Agripino - DEM/RN=Sim 28    conf:(0.88) < lift:(1.12)> lev:(0.08) [2] conv:(1.38)
+ 95. Flexa Ribeiro - PSDB/PA=Sim Paulo Bauer - PSDB/SC=Sim 29 ==> RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.12)> lev:(0.08) [2] conv:(1.96)
+ 96. RESULTADO=Aprovado 32 ==> Flexa Ribeiro - PSDB/PA=Sim Paulo Bauer - PSDB/SC=Sim 28    conf:(0.88) < lift:(1.12)> lev:(0.08) [2] conv:(1.38)
+ 97. Flexa Ribeiro - PSDB/PA=Sim Valdir Raupp - PMDB/RO=Sim 29 ==> RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.12)> lev:(0.08) [2] conv:(1.96)
+ 98. RESULTADO=Aprovado 32 ==> Flexa Ribeiro - PSDB/PA=Sim Valdir Raupp - PMDB/RO=Sim 28    conf:(0.88) < lift:(1.12)> lev:(0.08) [2] conv:(1.38)
+ 99. Benedito de Lira - PP/AL=Sim Flexa Ribeiro - PSDB/PA=Sim Ivo Cassol - PP/RO=Sim 29 ==> RESULTADO=Aprovado 28    conf:(0.97) < lift:(1.12)> lev:(0.08) [2] conv:(1.96)
+100. RESULTADO=Aprovado 32 ==> Benedito de Lira - PP/AL=Sim Flexa Ribeiro - PSDB/PA=Sim Ivo Cassol - PP/RO=Sim 28    conf:(0.88) < lift:(1.12)> lev:(0.08) [2] conv:(1.38)
+

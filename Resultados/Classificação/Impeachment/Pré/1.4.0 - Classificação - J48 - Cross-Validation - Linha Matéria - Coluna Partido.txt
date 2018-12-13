@@ -1,0 +1,70 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     1.4.0-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    94
+Attributes:   16
+              DEM
+              PCdoB
+              PDT
+              PMDB
+              PP
+              PPS
+              PR
+              PRB
+              PSB
+              PSC
+              PSD
+              PSDB
+              PSOL
+              PT
+              PTB
+              RESULTADO
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+PP = Sim
+|   PSB = Sim
+|   |   PSDB = Sim: Aprovado (48.0)
+|   |   PSDB = P-NRV: Rejeitado (6.0)
+|   PSB = P-NRV: Rejeitado (21.0/2.0)
+|   PSB = Não: Aprovado (1.0)
+PP = P-NRV: Rejeitado (12.0)
+PP = Não: Rejeitado (6.0)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	9
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          90               95.7447 %
+Incorrectly Classified Instances         4                4.2553 %
+Kappa statistic                          0.9149
+Mean absolute error                      0.0666
+Root mean squared error                  0.2045
+Relative absolute error                 13.4083 %
+Root relative squared error             41.0322 %
+Total Number of Instances               94     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,922    0,000    1,000      0,922    0,959      0,918    0,963     0,975     Aprovado
+                 1,000    0,078    0,915      1,000    0,956      0,918    0,963     0,934     Rejeitado
+Weighted Avg.    0,957    0,036    0,961      0,957    0,958      0,918    0,963     0,956     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 47  4 |  a = Aprovado
+  0 43 |  b = Rejeitado
+

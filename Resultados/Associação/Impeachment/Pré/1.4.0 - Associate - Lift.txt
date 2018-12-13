@@ -1,0 +1,151 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 100 -T 1 -C 1.1 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     1.4.0-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    58
+Attributes:   16
+              DEM
+              PCdoB
+              PDT
+              PMDB
+              PP
+              PPS
+              PR
+              PRB
+              PSB
+              PSC
+              PSD
+              PSDB
+              PSOL
+              PT
+              PTB
+              RESULTADO
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.85 (49 instances)
+Minimum metric <lift>: 1.1
+Number of cycles performed: 3
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 10
+
+Size of set of large itemsets L(2): 43
+
+Size of set of large itemsets L(3): 97
+
+Size of set of large itemsets L(4): 119
+
+Size of set of large itemsets L(5): 78
+
+Size of set of large itemsets L(6): 25
+
+Size of set of large itemsets L(7): 3
+
+Best rules found:
+
+  1. PP=Sim PSDB=Sim PTB=Sim 49 ==> RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+  2. RESULTADO=Aprovado 51 ==> PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+  3. PP=Sim PSDB=Sim PTB=Sim 49 ==> PDT=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+  4. PDT=Sim PP=Sim PSDB=Sim PTB=Sim 49 ==> RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+  5. RESULTADO=Aprovado 51 ==> PDT=Sim PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+  6. PDT=Sim RESULTADO=Aprovado 51 ==> PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+  7. PP=Sim PSDB=Sim PTB=Sim 49 ==> PMDB=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+  8. PMDB=Sim PP=Sim PSDB=Sim PTB=Sim 49 ==> RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+  9. RESULTADO=Aprovado 51 ==> PMDB=Sim PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 10. PMDB=Sim RESULTADO=Aprovado 51 ==> PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 11. PP=Sim PSD=Sim PSDB=Sim PT=Sim 49 ==> RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 12. RESULTADO=Aprovado 51 ==> PP=Sim PSD=Sim PSDB=Sim PT=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 13. PP=Sim PSD=Sim PSDB=Sim 51 ==> PTB=Sim RESULTADO=Aprovado 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 14. PP=Sim PSDB=Sim PTB=Sim 49 ==> PSD=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 15. PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49 ==> RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 16. RESULTADO=Aprovado 51 ==> PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 17. PSD=Sim RESULTADO=Aprovado 51 ==> PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 18. PTB=Sim RESULTADO=Aprovado 49 ==> PP=Sim PSD=Sim PSDB=Sim 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 19. PP=Sim PSDB=Sim PTB=Sim 49 ==> PDT=Sim PMDB=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 20. PDT=Sim PP=Sim PSDB=Sim PTB=Sim 49 ==> PMDB=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 21. PMDB=Sim PP=Sim PSDB=Sim PTB=Sim 49 ==> PDT=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 22. PDT=Sim PMDB=Sim PP=Sim PSDB=Sim PTB=Sim 49 ==> RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 23. RESULTADO=Aprovado 51 ==> PDT=Sim PMDB=Sim PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 24. PDT=Sim RESULTADO=Aprovado 51 ==> PMDB=Sim PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 25. PMDB=Sim RESULTADO=Aprovado 51 ==> PDT=Sim PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 26. PDT=Sim PMDB=Sim RESULTADO=Aprovado 51 ==> PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 27. PP=Sim PSD=Sim PSDB=Sim PT=Sim 49 ==> PDT=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 28. PDT=Sim PP=Sim PSD=Sim PSDB=Sim PT=Sim 49 ==> RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 29. RESULTADO=Aprovado 51 ==> PDT=Sim PP=Sim PSD=Sim PSDB=Sim PT=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 30. PDT=Sim RESULTADO=Aprovado 51 ==> PP=Sim PSD=Sim PSDB=Sim PT=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 31. PP=Sim PSD=Sim PSDB=Sim 51 ==> PDT=Sim PTB=Sim RESULTADO=Aprovado 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 32. PDT=Sim PP=Sim PSD=Sim PSDB=Sim 51 ==> PTB=Sim RESULTADO=Aprovado 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 33. PP=Sim PSDB=Sim PTB=Sim 49 ==> PDT=Sim PSD=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 34. PDT=Sim PP=Sim PSDB=Sim PTB=Sim 49 ==> PSD=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 35. PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49 ==> PDT=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 36. PDT=Sim PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49 ==> RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 37. RESULTADO=Aprovado 51 ==> PDT=Sim PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 38. PDT=Sim RESULTADO=Aprovado 51 ==> PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 39. PSD=Sim RESULTADO=Aprovado 51 ==> PDT=Sim PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 40. PDT=Sim PSD=Sim RESULTADO=Aprovado 51 ==> PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 41. PTB=Sim RESULTADO=Aprovado 49 ==> PDT=Sim PP=Sim PSD=Sim PSDB=Sim 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 42. PDT=Sim PTB=Sim RESULTADO=Aprovado 49 ==> PP=Sim PSD=Sim PSDB=Sim 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 43. PP=Sim PSD=Sim PSDB=Sim PT=Sim 49 ==> PMDB=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 44. PMDB=Sim PP=Sim PSD=Sim PSDB=Sim PT=Sim 49 ==> RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 45. RESULTADO=Aprovado 51 ==> PMDB=Sim PP=Sim PSD=Sim PSDB=Sim PT=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 46. PMDB=Sim RESULTADO=Aprovado 51 ==> PP=Sim PSD=Sim PSDB=Sim PT=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 47. PP=Sim PSD=Sim PSDB=Sim 51 ==> PMDB=Sim PTB=Sim RESULTADO=Aprovado 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 48. PMDB=Sim PP=Sim PSD=Sim PSDB=Sim 51 ==> PTB=Sim RESULTADO=Aprovado 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 49. PP=Sim PSDB=Sim PTB=Sim 49 ==> PMDB=Sim PSD=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 50. PMDB=Sim PP=Sim PSDB=Sim PTB=Sim 49 ==> PSD=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 51. PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49 ==> PMDB=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 52. PMDB=Sim PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49 ==> RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 53. RESULTADO=Aprovado 51 ==> PMDB=Sim PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 54. PMDB=Sim RESULTADO=Aprovado 51 ==> PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 55. PSD=Sim RESULTADO=Aprovado 51 ==> PMDB=Sim PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 56. PMDB=Sim PSD=Sim RESULTADO=Aprovado 51 ==> PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 57. PTB=Sim RESULTADO=Aprovado 49 ==> PMDB=Sim PP=Sim PSD=Sim PSDB=Sim 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 58. PMDB=Sim PTB=Sim RESULTADO=Aprovado 49 ==> PP=Sim PSD=Sim PSDB=Sim 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 59. PP=Sim PSD=Sim PSDB=Sim PT=Sim 49 ==> PDT=Sim PMDB=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 60. PDT=Sim PP=Sim PSD=Sim PSDB=Sim PT=Sim 49 ==> PMDB=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 61. PMDB=Sim PP=Sim PSD=Sim PSDB=Sim PT=Sim 49 ==> PDT=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 62. PDT=Sim PMDB=Sim PP=Sim PSD=Sim PSDB=Sim PT=Sim 49 ==> RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 63. RESULTADO=Aprovado 51 ==> PDT=Sim PMDB=Sim PP=Sim PSD=Sim PSDB=Sim PT=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 64. PDT=Sim RESULTADO=Aprovado 51 ==> PMDB=Sim PP=Sim PSD=Sim PSDB=Sim PT=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 65. PMDB=Sim RESULTADO=Aprovado 51 ==> PDT=Sim PP=Sim PSD=Sim PSDB=Sim PT=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 66. PDT=Sim PMDB=Sim RESULTADO=Aprovado 51 ==> PP=Sim PSD=Sim PSDB=Sim PT=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 67. PP=Sim PSD=Sim PSDB=Sim 51 ==> PDT=Sim PMDB=Sim PTB=Sim RESULTADO=Aprovado 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 68. PDT=Sim PP=Sim PSD=Sim PSDB=Sim 51 ==> PMDB=Sim PTB=Sim RESULTADO=Aprovado 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 69. PMDB=Sim PP=Sim PSD=Sim PSDB=Sim 51 ==> PDT=Sim PTB=Sim RESULTADO=Aprovado 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 70. PDT=Sim PMDB=Sim PP=Sim PSD=Sim PSDB=Sim 51 ==> PTB=Sim RESULTADO=Aprovado 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 71. PP=Sim PSDB=Sim PTB=Sim 49 ==> PDT=Sim PMDB=Sim PSD=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 72. PDT=Sim PP=Sim PSDB=Sim PTB=Sim 49 ==> PMDB=Sim PSD=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 73. PMDB=Sim PP=Sim PSDB=Sim PTB=Sim 49 ==> PDT=Sim PSD=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 74. PDT=Sim PMDB=Sim PP=Sim PSDB=Sim PTB=Sim 49 ==> PSD=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 75. PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49 ==> PDT=Sim PMDB=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 76. PDT=Sim PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49 ==> PMDB=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 77. PMDB=Sim PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49 ==> PDT=Sim RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 78. PDT=Sim PMDB=Sim PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49 ==> RESULTADO=Aprovado 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 79. RESULTADO=Aprovado 51 ==> PDT=Sim PMDB=Sim PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 80. PDT=Sim RESULTADO=Aprovado 51 ==> PMDB=Sim PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 81. PMDB=Sim RESULTADO=Aprovado 51 ==> PDT=Sim PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 82. PDT=Sim PMDB=Sim RESULTADO=Aprovado 51 ==> PP=Sim PSD=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 83. PSD=Sim RESULTADO=Aprovado 51 ==> PDT=Sim PMDB=Sim PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 84. PDT=Sim PSD=Sim RESULTADO=Aprovado 51 ==> PMDB=Sim PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 85. PMDB=Sim PSD=Sim RESULTADO=Aprovado 51 ==> PDT=Sim PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 86. PDT=Sim PMDB=Sim PSD=Sim RESULTADO=Aprovado 51 ==> PP=Sim PSDB=Sim PTB=Sim 49    conf:(0.96) < lift:(1.14)> lev:(0.1) [5] conv:(2.64)
+ 87. PTB=Sim RESULTADO=Aprovado 49 ==> PDT=Sim PMDB=Sim PP=Sim PSD=Sim PSDB=Sim 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 88. PDT=Sim PTB=Sim RESULTADO=Aprovado 49 ==> PMDB=Sim PP=Sim PSD=Sim PSDB=Sim 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 89. PMDB=Sim PTB=Sim RESULTADO=Aprovado 49 ==> PDT=Sim PP=Sim PSD=Sim PSDB=Sim 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 90. PDT=Sim PMDB=Sim PTB=Sim RESULTADO=Aprovado 49 ==> PP=Sim PSD=Sim PSDB=Sim 49    conf:(1) < lift:(1.14)> lev:(0.1) [5] conv:(5.91)
+ 91. PP=Sim PSDB=Sim 52 ==> PTB=Sim RESULTADO=Aprovado 49    conf:(0.94) < lift:(1.12)> lev:(0.09) [5] conv:(2.02)
+ 92. PTB=Sim RESULTADO=Aprovado 49 ==> PP=Sim PSDB=Sim 49    conf:(1) < lift:(1.12)> lev:(0.09) [5] conv:(5.07)
+ 93. PP=Sim PSDB=Sim 52 ==> PDT=Sim PTB=Sim RESULTADO=Aprovado 49    conf:(0.94) < lift:(1.12)> lev:(0.09) [5] conv:(2.02)
+ 94. PDT=Sim PP=Sim PSDB=Sim 52 ==> PTB=Sim RESULTADO=Aprovado 49    conf:(0.94) < lift:(1.12)> lev:(0.09) [5] conv:(2.02)
+ 95. PTB=Sim RESULTADO=Aprovado 49 ==> PDT=Sim PP=Sim PSDB=Sim 49    conf:(1) < lift:(1.12)> lev:(0.09) [5] conv:(5.07)
+ 96. PDT=Sim PTB=Sim RESULTADO=Aprovado 49 ==> PP=Sim PSDB=Sim 49    conf:(1) < lift:(1.12)> lev:(0.09) [5] conv:(5.07)
+ 97. PP=Sim PSDB=Sim 52 ==> PMDB=Sim PTB=Sim RESULTADO=Aprovado 49    conf:(0.94) < lift:(1.12)> lev:(0.09) [5] conv:(2.02)
+ 98. PMDB=Sim PP=Sim PSDB=Sim 52 ==> PTB=Sim RESULTADO=Aprovado 49    conf:(0.94) < lift:(1.12)> lev:(0.09) [5] conv:(2.02)
+ 99. PTB=Sim RESULTADO=Aprovado 49 ==> PMDB=Sim PP=Sim PSDB=Sim 49    conf:(1) < lift:(1.12)> lev:(0.09) [5] conv:(5.07)
+100. PMDB=Sim PTB=Sim RESULTADO=Aprovado 49 ==> PP=Sim PSDB=Sim 49    conf:(1) < lift:(1.12)> lev:(0.09) [5] conv:(5.07)
+
